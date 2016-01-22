@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>TripPitch - Trips Inspired By You</title>
+  <title>High Tops</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -11,14 +11,136 @@
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
   <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
 
   <script src="assets/components/modernizr/modernizr.js"></script>
 </head>
 <body>
 
-hello
+
+  <div class="welcome">
+    <div class="container row">
+      <div class="twelve columns">
+        <img src="assets/img/hightops-sneaker.png" alt="sneaker" class="shoe-img">
+        <h1 class="hero-text">SAME THING<br> EVERYDAY</h1>
+        <h2 class="sub-header">COOL APPS  <i class="em em-sparkles"></i>  SWEET CODE  <i class="em em-sparkles"></i>  HOT DESIGN  <i class="em em-sparkles"></i>  HONEST VIBES</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="nicetrack">
+    <div class="container row">
+      <div class="nine columns">
+        <h1 class="project-title">
+          Nice Track
+        </h1>
+      </div>
+      <div class="three columns">
+      </div>
+    </div>
+    <div class="container row">
+      <div class="eight columns">
+        <p>Nice Track is a prototype for a quantitative journaling application. Everyday, a user can rate topics of interest to their lives and add a short journal entry about the rating. As more ratings are added, new charts are revealed to provide deeper insight. I developed this on Meteor, a fullstack javascript framework for building apps.</p>
+      </div>
+      <div class="one column">
+        &nbsp;
+      </div>
+      <div class="three columns">
+        <p><a href="#">Project Link</a> <i class="em em-paperclip"></i></p>
+      </div>
+    </div>
+    <div class="container row">
+      <div class="nine columns">
+        <div class="desktop-img">
+          <img
+            alt="Nice Track UI"
+            data-sizes="auto"
+            src="assets/img/browser.jpg"
+            data-srcset="
+              assets/img/sizes/screen-nicetrack2-800px.jpg 600w,
+              assets/img/sizes/screen-nicetrack2-original.jpg 900w"
+            class="lazyload blur-up">
+        </div>
+        <div class="desktop-img">
+          <img
+            alt="Nice Track UI"
+            data-sizes="auto"
+            src="assets/img/browser.jpg"
+            data-srcset="
+              assets/img/sizes/screen-nicetrack-800px.jpg 600w,
+              assets/img/sizes/screen-nicetrack-original.jpg 900w"
+            class="lazyload blur-up">
+        </div>
+      </div>
+      <div class="three columns">
+        <div class="mobile-img">
+          <img src="assets/img/mobile-nicetrack.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="nav">
+    <ul>
+      <li>
+        <i class="em em-clipboard"></i>
+        <a href="#modal-1" rel="modal:open">ABOUT</a>
+      </li>
+      <li>
+        <i class="em em-fax"></i>
+        <a href="#modal-2" rel="modal:open">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="modal-1" style="display:none">
+    <div class="about">
+      <div class="container row">
+        <div class="nine columns">
+          <h1 class="project-title">Listen First</h1>
+          <p>Are you looking to build a website that will pay off for your business? Or are you looking to create the most awesome app ever?
+
+          My mantra is listen first, then create. In order to create beautiful, useful digital products, it starts with listening for my client's real needs (and the needs of their audience). Together, we create solutions with measurable results. As we work together, there’s lots of feedback and each project's development is guided by our conversations. This is how we get it right.
+
+          What's going on with your project? I'd love to share some ideas and see if I can help. Let's chat.</p>
+
+        </div>
+        <div class="three columns">
+          <h2 class="sub-header">COOL APPS  <i class="em em-sparkles"></i>  SWEET CODE  <i class="em em-sparkles"></i>  HOT DESIGN  <i class="em em-sparkles"></i>  HONEST VIBES</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-2" style="display:none">
+    <img src="http://www.gifbin.com/bin/032014/1395614704_cat_vs_steam.gif" width="396" height="275" alt="Almost Caught It.">
+  </div>
+
+  <div class="modal">
+    <a rel="modal:close">&times;</a>
+    <div class="modal-inner">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
 
 <script src="assets/js/scripts.min.js"></script>
+
+<script>var modal = new vanillaModal.VanillaModal({
+    onBeforeOpen : function(e) {
+      console.log('onBeforeOpen hook', e, this);
+    },
+    onOpen : function(e) {
+      console.log('onOpen hook', e, this);
+    },
+    onBeforeClose : function(e) {
+      console.log('onBeforeClose hook', e, this);
+    },
+    onClose : function(e) {
+      console.log('onClose hook', e, this);
+    }
+  });</script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
