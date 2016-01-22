@@ -7,6 +7,8 @@ var gulp = require('gulp'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     minifyCSS = require('gulp-minify-css'),
+    concat = require('gulp-concat');
+    include = require("gulp-include");
     package = require('./package.json');
 
 
@@ -35,7 +37,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
-  gulp.src('src/js/scripts.js')
+  gulp.src('src/js/*.js')
+    .pipe(include())
+      .on('error', console.log)
+    .pipe(concat('scripts.js'))
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(header(banner, { package : package }))

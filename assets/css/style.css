@@ -13,16 +13,12 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 100%; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -379,14 +375,8 @@ td,
 th {
   padding: 0; }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
-.nav ul {
-  list-style: none; }
+body {
+  background: aqua; }
 
 @font-face {
   font-family: 'Font-Name';

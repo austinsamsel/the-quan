@@ -4,7 +4,7 @@
   text-rendering: optimizeLegibility;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
@@ -12,6 +12,6 @@ body {
   transition: all .4s .3s ease-in;
 }
 body,html{
-	min-height: 100vh;
-	overflow: hidden;
+	// min-height: 100vh;
+	// overflow: hidden;
 }
