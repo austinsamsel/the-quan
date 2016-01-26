@@ -2851,7 +2851,8 @@ h6 {
   h6 {
     font-size: 1.5rem; } }
 
-p, input, textarea {
+p, input.u-full-width,
+textarea.u-full-width {
   margin-top: 0; }
 
 /* Links
@@ -3065,8 +3066,8 @@ dl,
 figure,
 table,
 p,
-input,
-textarea,
+input.u-full-width,
+textarea.u-full-width,
 ul,
 ol,
 form {
@@ -3618,7 +3619,8 @@ a.project-link {
     margin-right: 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
 
-p, input, textarea {
+p, input.u-full-width,
+textarea.u-full-width {
   font-size: 1.2rem;
   margin-bottom: 1rem; }
 
@@ -3636,7 +3638,7 @@ p, input, textarea {
     max-width: 1200px; } }
 
 .dark-text {
-  color: #646b75; }
+  color: #7B838E; }
 
 .nav {
   position: fixed;
@@ -3647,7 +3649,8 @@ p, input, textarea {
     padding: 0.25rem; }
   .nav li {
     list-style: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: bold;
     margin: 0.5rem;
     text-transform: uppercase; }
   .nav i {
@@ -3728,10 +3731,21 @@ body.vanilla-modal .modal-hider {
 .vanilla-modal .modal ~ body {
   overflow-y: hidden; }
 
+.project-title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: -0.1rem;
+  color: #fff; }
+
+.modal-title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: -0.1rem;
+  color: #fff;
+  margin-bottom: 4rem; }
+
 .about {
   background-color: #6EDFF2;
   min-height: 100vh;
-  color: #646b75;
+  color: #7B838E;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3758,7 +3772,7 @@ body.vanilla-modal .modal-hider {
 .contact {
   background-color: #28e997;
   min-height: 100vh;
-  color: #646b75;
+  color: #7B838E;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3772,14 +3786,37 @@ body.vanilla-modal .modal-hider {
 .contact .container.row {
   max-width: 900px; }
 
-input, textarea {
-  color: #989ea7;
+input.u-full-width,
+textarea.u-full-width {
   border: 0;
-  outline: 0; }
+  outline: 0;
+  color: #fff;
+  background: #15c97d; }
+  input.u-full-width:focus,
+  textarea.u-full-width:focus {
+    border: 0; }
+
+input.u-full-width::-webkit-input-placeholder,
+textarea.u-full-width::-webkit-input-placeholder {
+  color: #109b60; }
+
+input.u-full-width::-moz-placeholder,
+textarea.u-full-width::-moz-placeholder {
+  color: #109b60; }
+
+input.u-full-width:-ms-input-placeholder,
+textarea.u-full-width:-ms-input-placeholder {
+  color: #109b60; }
+
+input.u-full-width::placeholder,
+textarea.u-full-width::placeholder {
+  color: #109b60; }
 
 input.u-full-width {
   padding: 2rem 1rem;
   border: 0; }
+  input.u-full-width:focus {
+    border: 0; }
 
 textarea.u-full-width {
   min-height: 150px;

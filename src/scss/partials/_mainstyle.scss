@@ -6,7 +6,7 @@ $archivo-narrow: 'Archivo Narrow', sans-serif;
 $archivo-black: 'Archivo Black', sans-serif;
 
 $purple: #8664FF;
-$dark-text: #646b75;
+$dark-text: #7B838E;
 $green: #28e997;
 $babyblue: #15e2e8;
 $blue: #4A90E2;
@@ -115,7 +115,8 @@ p{
   }
   li{
     list-style:none;
-    font-size:0.9rem;
+    font-size:0.8rem;
+    font-weight:bold;
     margin:0.5rem;
     text-transform:uppercase;
   }
@@ -203,6 +204,18 @@ body.vanilla-modal .modal-hider {
   overflow-y:hidden;
 }
 
+.project-title{
+  font-family:$archivo-black;
+  letter-spacing:-0.1rem;
+  color:#fff;
+}
+.modal-title{
+  font-family:$archivo-black;
+  letter-spacing:-0.1rem;
+  color:#fff;
+  margin-bottom:4rem;
+}
+
 // modal: about
 
 .about{
@@ -240,15 +253,27 @@ body.vanilla-modal .modal-hider {
 .contact .container.row {
   max-width: 900px;
 }
-input, textarea{
+input.u-full-width,
+textarea.u-full-width{
   @extend p;
-  color:lighten($dark-text,20%);
   border:0;
   outline:0;
+  color:#fff;
+  background: darken($green, 10%);
+  &:focus{
+    border:0;
+  }
+}
+input.u-full-width::placeholder,
+textarea.u-full-width::placeholder{
+  color:darken($green,20%);
 }
 input.u-full-width{
   padding:2rem 1rem;
   border:0;
+  &:focus{
+    border:0;
+  }
 }
 textarea.u-full-width{
   min-height:150px;
